@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>book marker</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <link href="./cc/sttyle.css" rel="style sheet">
+    </head>
+ 
+        <header>
+            <div class="container">
+                <h1 class=" text-secondary m-auto p-5">Bookmarker</h1>
+            </div>
+            <hr>
+        </header>
+        <body>
+        <div class=" w-75  m-auto shadow-sm p-5 my-5 text-center bg-body-secondary">
+           <h2>Bookmark your favorite sites</h2>
+           <p class=" text-secondary" >Site Name</p>
+           <input class="form-control form-control-sm" type="text" placeholder="Bookmark Name" aria-label=".form-control-sm example" id="bookname">
+           <!-- <p class="alert alert-danger m-auto" id="nameError"></p> -->
+           <li class="list-group-item list-group-item-danger m-2"  id="nameError"></li>
+           <p class=" text-secondary">Site URL</p>
+           <input class="form-control form-control-sm" type="text" placeholder="Bookmark url" aria-label=".form-control-sm example" id="url">
+           <!-- <p class="alert alert-danger m-auto"  id="urlError" style="display: block;"></p> -->
+           <li class="list-group-item list-group-item-danger m-2"  id="urlError"></li>
+          <br>
+           <button class="btn btn-primary m-auto " onclick="submit()"  id="submit"> submit </button>
+        </div>
+        <div class="column">
+            <div class="w-75  m-auto p-5 my-5">
+             <table class="table bg-body-secondary ">
+                 <thead>
+                     <tr>
+                         <th>Bookmaker Name</th>
+                         <th>Bookmaker url</th>
+                         <th> delete </th> 
+                     </tr>
+                 </thead>
+                 <tbody id="body">
+                   
+                    
+                 </tbody>
+             </table>
+     
+            </div>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    </body>
+</html>
